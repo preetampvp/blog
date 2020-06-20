@@ -1,0 +1,4 @@
+.venv
+.vim
+db.sqlite3
+
