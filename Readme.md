@@ -2,4 +2,4 @@
 
 - `make`: start dev server
 - `make make_migrations`: create migrations
-- `make migrations`: apply migrations
+- `make migrate`: apply migrations
