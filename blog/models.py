@@ -24,7 +24,7 @@ class Blog(models.Model):
 
     content = models.TextField(blank=True, null=True)
 
-    created_date = models.DateField(auto_now=True)
+    created_date = models.DateTimeField(auto_now=True)
 
     state = models.CharField(
         max_length=20,
@@ -34,4 +34,4 @@ class Blog(models.Model):
     author = models.OneToOneField(User, null=True, on_delete=models.SET_NULL)
 
     def __str__(self):
-        return f'{self.title} - {self.author}'
+        return f'{self.title} - {self.author} - {self.created_date}'
