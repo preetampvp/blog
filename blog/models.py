@@ -3,9 +3,9 @@ from django.db import models
 import uuid
 
 BLOG_STATE_CHOICES = (
-    ('draft', 'draft'),
-    ('published', 'published'),
-    ('archived', 'archived'),
+    ('draft', 'DRAFT'),
+    ('published', 'PUBLISHED'),
+    ('archived', 'ARCHIVED'),
 )
 
 
