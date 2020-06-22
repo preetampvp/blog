@@ -3,5 +3,24 @@
 {% block title %} BAC - Home {% endblock title%} 
 
 {% block content %}
-<h1>Home</h1>
+     <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+          {% for post in blogs %}
+          <div class="post-preview">
+            <a href="{% url 'blog:post' slug=post.slug %}">
+              <h2 class="post-title">
+                {{ post.title }}
+              </h2>
+              <h3 class="post-subtitle">
+                {{ post.short_description | safe }}
+              </h3>
+            </a>
+            <p class="post-meta">Posted by {{ post.author }} on {{ post.created_date | date:'F j, Y' }}</p>
+          </div>
+          <hr>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
 {% endblock content %}

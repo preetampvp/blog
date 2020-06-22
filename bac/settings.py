@@ -133,6 +133,7 @@ STATICFILES_DIRS = [
 TINYMCE_JS_URL = os.path.join(STATIC_URL, 'js/tinymce/tinymce.min.js')
 TINYMCE_JS_ROOT = os.path.join(STATIC_URL, 'js/tinymce')
 TINYMCE_DEFAULT_CONFIG = {
+    'height': 500,
     'plugins': 'image,imagetools,code,media,link,codesample',
     'theme': 'silver',
     'toolbar': 'styleselect | undo redo | bold italic | \
