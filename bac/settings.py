@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tinymce',
     'blog',
 ]
 
@@ -126,3 +127,19 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+# TinyMCE config
+#TINYMCE_COMPRESSOR = True
+TINYMCE_JS_URL = os.path.join(STATIC_URL, 'js/tinymce/tinymce.min.js')
+TINYMCE_JS_ROOT = os.path.join(STATIC_URL, 'js/tinymce')
+TINYMCE_DEFAULT_CONFIG = {
+    'plugins': 'image,imagetools,code,media,link,codesample',
+    'theme': 'silver',
+    'toolbar': 'styleselect | undo redo | bold italic | \
+    alignleft aligncenter alignright | link image media \
+    codesample code',
+    'image_caption': True,
+    'image_advtab': True,
+    'cleanup_on_startup': True,
+    'custom_undo_redo_levels': 10,
+}

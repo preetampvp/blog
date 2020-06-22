@@ -8,7 +8,7 @@
 
 - Blog table - Title, slug, Short description, Content, Author, created date ✔
 - Date format - display
-- WYSIWYG editor in admin for content.
+- WYSIWYG editor in admin for content. ✔
 - Home page to list published articles.
 - Page to view the article content.
 - Image S3 integration?

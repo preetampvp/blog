@@ -4,6 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+django = "3.0.7"
+django-tinymce = "*"
 
 [dev-packages]
 pep8 = "*"
